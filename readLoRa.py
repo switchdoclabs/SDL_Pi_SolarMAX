@@ -150,12 +150,12 @@ def readWXLink(block1, block2, stringblock1, stringblock2, block1_orig, block2_o
 					        print "WXLink_Data_Fresh set to True"
                                 #
                                 # use protocol 8 if SolarMAX_Present == True 
-                                if (((protocol_ID == 8) or (protocol_ID == 9))and (config.SolarMAX_Present)):    # 8 is the WXLink Protocol
+                                if (((protocol_ID == 8) or (protocol_ID == 10))and (config.SolarMAX_Present)):    # 8 is the WXLink Protocol
                                     ############################
                                     ############################
                                     ############################
                                     ############################
-                                    print("protocol 8 or 9 - SolarMAX received")
+                                    print("protocol 8 or 10 - SolarMAX received")
                                     ############################
                                     ############################
                                     ############################
@@ -225,7 +225,7 @@ def readWXLink(block1, block2, stringblock1, stringblock2, block1_orig, block2_o
                 		    print "SolarMax Message ID %i" % MessageID
     
 
-                                if ((protocol_ID == 3) or (protocol_ID == 8) or (protocal_ID == 9)):
+                                if ((protocol_ID == 3) or (protocol_ID == 8) or (protocal_ID == 10)):
                                         pass
                                 else:
                                     if (config.SWDEBUG):
